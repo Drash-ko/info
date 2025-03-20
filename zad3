@@ -1,0 +1,30 @@
+#include <iostream>  
+ 
+using namespace std;  
+ 
+int main() 
+{  
+    int tab[5][5];  
+    int tab1[5][5];  
+    
+    for (int i = 0; i < 5; i++) 
+    {  
+        for (int j = 0; j < 5; j++) 
+        {  
+            cin >> tab[i][j];  
+            tab1[j][i] = tab[i][j];  
+        }
+    }
+ 
+    
+    for (int i = 0; i < 5; i++) 
+    {  
+        for (int j = 0; j < 5; j++) 
+        {  
+            cout << tab1[i][j] << " ";  
+        }
+        cout << endl;  
+    }
+ 
+    return 0;  
+}
